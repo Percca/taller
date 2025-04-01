@@ -1,0 +1,77 @@
+/* Estilos específicos para la página de autores */
+.autores-box {
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.autor-info {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.autor-card {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.autor-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #8A2BE2;
+}
+
+.autor-datos h3 {
+    color: #6A0DAD;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.autor-datos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.autor-datos li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.autor-datos strong {
+    color: #6A0DAD;
+    min-width: 100px;
+    display: inline-block;
+}
+
+.autor-bio {
+    background: #f0e6ff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #8A2BE2;
+}
+
+.autor-bio h3 {
+    color: #6A0DAD;
+    margin-top: 20px;
+}
+
+.autor-bio p {
+    line-height: 1.6;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #8A2BE2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,98 @@
+/* Estilos específicos para actividades */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.quiz-title {
+    color: #6A0DAD;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #8A2BE2;
+    padding-bottom: 10px;
+}
+
+.question-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border-left: 5px solid #8A2BE2;
+}
+
+.question-text {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.option-label:hover {
+    background: #e6e6fa;
+}
+
+.option-radio {
+    margin-right: 8px;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #8A2BE2;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.option-radio:checked {
+    background-color: #8A2BE2;
+}
+
+.option-radio:checked::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo para respuestas correctas */
+.option-radio.correct-answer:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.option-radio.correct-answer:checked + .option-text {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.option-radio:checked:not(.correct-answer) {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.option-radio:checked:not(.correct-answer) + .option-text {
+    color: #dc3545;
+}
