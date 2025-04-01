@@ -1,3 +1,84 @@
 h3{
     color: #9400D3;
 }
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+.citation {
+    color: #6A0DAD;
+    margin: 20px 0 15px;
+    font-size: 1.4em;
+}
+
+/* Contenedores de video */
+.video-container {
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    border-left: 4px solid #8A2BE2;
+    border-radius: 4px;
+    overflow: hidden; /* Para bordes redondeados en iframe */
+}
+
+.video-info {
+    padding: 15px;
+}
+
+.video-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.video-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Iframe de YouTube */
+.youtube-iframe {
+    width: 100%;
+    aspect-ratio: 16/9; 
+    border: none;
+    display: block;
+}
+
+/* Media Queries para responsive */
+@media (max-width: 768px) {
+    article {
+        padding: 15px;
+    }
+    
+    .citation {
+        font-size: 1.3em;
+    }
+    
+    .video-container {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    article {
+        padding: 10px;
+    }
+    
+    .video-info {
+        padding: 10px;
+    }
+    
+    .citation {
+        font-size: 1.2em;
+    }
+    
+    .video-title {
+        font-size: 1.1em;
+    }
+}
