@@ -1,6 +1,5 @@
-/* Estilos específicos para la página de autores */
 .autores-box {
-    padding: 30px;
+    padding: 0.8rem;
     background-color: #f8f9fa;
 }
 
@@ -8,21 +7,21 @@
     max-width: 900px;
     margin: 0 auto;
     background: white;
-    padding: 30px;
+    padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .autor-card {
     display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 0.7rem;
+    margin-bottom: 0.8rem;
     align-items: center;
 }
 
 .autor-img img {
-    width: 200px;
-    height: 200px;
+    width: 30vh;
+    height: 30vh;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #8A2BE2;
@@ -66,7 +65,16 @@
     line-height: 1.6;
 }
 
-/* Estilos para enlaces */
+/* Modificación específica para eliminar subrayado en menú */
+#menu a {
+    text-decoration: none !important;
+}
+
+#menu a:hover {
+    text-decoration: none !important;
+}
+
+/* Estilos para enlaces (excepto menú) */
 a {
     color: #8A2BE2;
     text-decoration: none;
@@ -74,4 +82,80 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries para responsive (se mantienen igual) */
+@media (max-width: 992px) {
+    .autor-info {
+        padding: 2rem;
+    }
+    
+    .autor-img img {
+        width: 25vh;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .autor-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .autor-img img {
+        width: 20vh;
+        height: 20vh;
+        margin-bottom: 1rem;
+    }
+    
+    .autor-datos h3 {
+        font-size: 22px;
+    }
+    
+    .autor-datos strong {
+        min-width: 80px;
+        display: inline-block;
+    }
+    
+    .autor-bio {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .autor-info {
+        padding: 1.5rem;
+    }
+    
+    .autor-img img {
+        width: 15vh;
+        height: 15vh;
+    }
+    
+    .autor-datos h3 {
+        font-size: 20px;
+    }
+    
+    .autor-datos li {
+        font-size: 14px;
+    }
+    
+    .autor-bio h3 {
+        font-size: 18px;
+    }
+    
+    .autor-bio p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .autor-info {
+        padding: 1rem;
+    }
+    
+    .autor-datos strong {
+        min-width: 70px;
+        font-size: 13px;
+    }
 }
